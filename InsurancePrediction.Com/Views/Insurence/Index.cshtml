@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Test</h2>
+<hr class="featurette-divider" />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="tab-content">
+                <div id="stripe" class="tab-pane fade in active">
+                    <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
+                    <form accept-charset="UTF-8" action="/" class="require-validation" class="" method="post">
+                        <div class='form-row'>
+                            <div class='form-group required'>
+                                <div class='error form-group hide'>
+                                    <div class='alert-danger alert'>
+                                        Please correct the errors and try again.
+                                    </div>
+                                </div>
+                                <label class='control-label'>Age</label>
+                                <input class='form-control' size='4' name="age" type='number' required>
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='form-group required'>
+                                <label class='control-label'>Gender</label>
+                                <input autocomplete='off' class='form-control' name="sex" size='20' type='text' required>
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='form-group required'>
+                                <label class='control-label'>BMI</label>
+                                <input class='form-control' autocomplete='off' size='20' name="bmi" type='number' required placeholder="0.00" min="0" value="0" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" />
+                            </div>
+                        </div>
+                        <div class='form-row'>
+                            <div class='form-group required'>
+                                <label class='control-label'>no of children</label>
+                                <input autocomplete='off' class='form-control' size='20' name="children" type='number' required>
+                            </div>
+                            <div class='form-group required'>
+                                <label class='control-label'>are you smoker</label>
+                                <input class='form-control' size='20' type='text' name="smoker" required>
+                            </div>
+                            <div class='form-group required'>
+                                <label class='control-label'>region</label>
+                                <input class='form-control' size='20' name="region"  type='text' required>
+                            </div>
+                            <div class='form-group required'>
+                                <label class='control-label'>premium charges</label>
+                                <input class='form-control' size='20' type='number' name="charges" required placeholder="0.00" min="0" value="0" step="0.01" pattern="^\d+(?:\.\d{1,2})?$" />
+                            </div>
+                            <div class='form-row'>
+                                <button class='btn btn-sm btn-primary' type='submit' onclick="return false;"> submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <label class='control-label'></label>
+            <div class="alert alert-info">Output</div>
+            <br>
+            <div class="btn-group-vertical btn-block">
+                &nbsp;
+            </div>
+            <br><br><br>
+            <div class="jumbotron jumbotron-flat">
+                <div class="paymentAmt">$0.00</div>
+                <br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
