@@ -274,6 +274,7 @@
     <Content Include="Planbot\src\app\navbar\navbar.component.html" />
     <Content Include="Planbot\src\app\prediction\prediction.component.css" />
     <Content Include="Planbot\src\app\prediction\prediction.component.html" />
+    <Content Include="Planbot\src\app\user\user.component.html" />
     <Content Include="Planbot\src\assets\images\bot.png" />
     <Content Include="Planbot\src\assets\images\user.png" />
     <Content Include="Planbot\src\favicon.ico" />
@@ -317,6 +318,8 @@
     <Content Include="Planbot\src\tslint.json" />
     <Content Include="Planbot\tsconfig.json" />
     <Content Include="Planbot\tslint.json" />
+    <Content Include="Planbot\src\app\login\login.scss" />
+    <Content Include="Planbot\src\app\user\user.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -371,6 +374,8 @@
     <TypeScriptCompile Include="Planbot\src\app\chat\chat.component.ts" />
     <TypeScriptCompile Include="Planbot\src\app\home\home.component.spec.ts" />
     <TypeScriptCompile Include="Planbot\src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\layouts\home-layout.component.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\layouts\login-layout.component.ts" />
     <TypeScriptCompile Include="Planbot\src\app\login\login.component.spec.ts" />
     <TypeScriptCompile Include="Planbot\src\app\login\login.component.ts" />
     <TypeScriptCompile Include="Planbot\src\app\models\login.ts" />
@@ -382,6 +387,12 @@
     <TypeScriptCompile Include="Planbot\src\app\services\login\login.service.spec.ts" />
     <TypeScriptCompile Include="Planbot\src\app\services\login\login.service.ts" />
     <TypeScriptCompile Include="Planbot\src\app\services\premium.service.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\core\auth.guard.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\core\auth.service.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\core\user.model.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\core\user.service.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\user\user.component.ts" />
+    <TypeScriptCompile Include="Planbot\src\app\user\user.resolver.ts" />
     <TypeScriptCompile Include="Planbot\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="Planbot\src\environments\environment.ts" />
     <TypeScriptCompile Include="Planbot\src\main.ts" />

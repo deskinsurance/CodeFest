@@ -6,9 +6,10 @@
         <div class="col-xs-12 ">
           <nav>
             <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" routerLink="home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-              <a class="nav-item nav-link" id="nav-chatbot-tab" data-toggle="tab" routerLink="chat" role="tab" aria-controls="nav-profile" aria-selected="false">Chatbot</a>
-              <a class="nav-item nav-link" id="nav-prediction-tab" data-toggle="tab" routerLink="prediction" role="tab" aria-controls="nav-prediction" aria-selected="false">Predication Engine</a>
+              <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" routerLink="/home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-chatbot-tab" data-toggle="tab" routerLink="/chat" role="tab" aria-controls="nav-profile" aria-selected="false">Chatbot</a>
+              <a class="nav-item nav-link" id="nav-prediction-tab" data-toggle="tab" routerLink="/prediction" role="tab" aria-controls="nav-prediction" aria-selected="false">Predication Engine</a>
+              <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
             </div>
           </nav>
           <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">

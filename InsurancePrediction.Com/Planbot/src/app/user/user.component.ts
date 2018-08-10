@@ -6,13 +6,12 @@ import { Location } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FirebaseUserModel } from '../core/user.model';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'page-user',
+  templateUrl: 'user.component.html',
+  styleUrls: ['user.scss']
 })
-export class HomeComponent implements OnInit{
+export class UserComponent implements OnInit{
 
   user: FirebaseUserModel = new FirebaseUserModel();
   profileForm: FormGroup;
@@ -43,4 +42,12 @@ export class HomeComponent implements OnInit{
     });
   }
   
+  logout(){
+    this.authService.doLogout()
+    .then((res) => {
+      this.location.back();
+    }, (error) => {
+      console.log("Logout error", error);
+    });
+  }
 }
