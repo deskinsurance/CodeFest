@@ -1,29 +1,49 @@
 
+
   <section id="tabs">
-    <div class="container">
-      <h6 class="section-title h4">Investment HelpDesk</h6>
+    <div class="col-lg-12  container ">
+    <div>
+    <header>
+      <div class="navbar navbar-static-middle ">
+     <a><img src="assets/images/logo.png" alt="logo image" /></a>
+     <div class="col-md-6 col-lg-7 text-center text-md-right">
+        <a class="fb-ic"  href="https://www.facebook.com/"  target="_blank">
+          <i class="fa fa-facebook white-text mr-4"> </i>
+        </a>
+        <a class="tw-ic" href="https://www.Twitter.com/"  target="_blank">
+          <i class="fa fa-twitter white-text mr-4"> </i>
+        </a>
+
+        <a class="ins-ic" href="https://www.Instagram.com/"  target="_blank">
+          <i class="fa fa-instagram white-text"> </i>
+        </a>
+      </div>
+     <a><img src="assets/images/pyramidlogo.png" alt="logo image" /></a>
+     </div>    
+		</header>
+    </div>
       <div class="row">
-        <div class="col-xs-12 ">
-          <nav>
-            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-              <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" routerLink="/home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-              <a class="nav-item nav-link" id="nav-chatbot-tab" data-toggle="tab" routerLink="/chat" role="tab" aria-controls="nav-profile" aria-selected="false">Chatbot</a>
-              <a class="nav-item nav-link" id="nav-prediction-tab" data-toggle="tab" routerLink="/prediction" role="tab" aria-controls="nav-prediction" aria-selected="false">Predication Engine</a>
-              <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
-            </div>
-          </nav>
-          <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              Welcome to the Investment helpdek system, we are here to assist you to suggest best investment plan for you.
-            </div>
-            <div class="tab-pane fade" id="nav-chatbot" role="tabpanel" aria-labelledby="nav-chatbot-tab">
-              Welcome to the vertual assistance system, we are here to assist you to assist you for your investment related queries.
-            </div>
-            <div class="tab-pane fade" id="nav-prediction" role="tabpanel" aria-labelledby="nav-prediction-tab">
-              Welcome to the Prediction system, we are here to assist you to assist you for your investment related queries.
-            </div>
-          </div>
+        <div class="col-lg-12" >
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fa fa-home" routerLink="/home"><b> i-investGuru </b></a>
+                      </li>                 
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <a> <button type="button" (click)="logout()" class="btn btn-danger nav-link fa fa-sign-out"> SignOff</button></a> 
+                </form>
+              </div>
+            </nav>
+
         </div>
       </div>
     </div>
+    
   </section>
+
+  

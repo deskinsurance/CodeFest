@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+
+.row-no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+ } 

@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { ChatComponent } from './chat/chat.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PredictionComponent } from './prediction/prediction.component';
 import { AngularFireModule } from 'angularfire2';
@@ -25,6 +24,7 @@ import { UserService } from './core/user.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeLayoutComponent } from './layouts/home-layout.component';
 import { LoginLayoutComponent } from './layouts/login-layout.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +32,10 @@ import { LoginLayoutComponent } from './layouts/login-layout.component';
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    ChatComponent,
     PredictionComponent,
     LoginLayoutComponent,
-    HomeLayoutComponent
+    HomeLayoutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

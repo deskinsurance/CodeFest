@@ -1,10 +1,21 @@
-<div class="container" style="background-color:lightgray">
-  <br />
-  <div class="text-center"><h4>{{title}}</h4></div><hr />
+
+<div class="container" style="background-color:#fff">
   <form #predictionForm="ngForm" novalidate>
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="form-group">
+    <div class="row dv jumbotron">
+
+        <div class="card mb-3 col-md-4">
+            <iframe
+            allow="microphone;"
+            width="340"
+            height="450"  
+            src="https://console.dialogflow.com/api-client/demo/embedded/a7d5c06e-5923-4dd1-bf59-c9740389f9c0">
+            </iframe>				 
+          </div>
+
+      <div class="col-md-4 jumbotron title" >
+          <div class="form-group "><span><b>Please fill below information:</b></span></div>
+       <div class="row">
+        <div class="form-group col-md-6">
           <label class='control-label'>Age: </label>
           <input #PersonAge="ngModel" [(ngModel)]="person.age" class='form-control' size='4' type='number' #age="ngModel" required name="PersonAge" />
           <span class="alert-danger"
@@ -12,7 +23,7 @@
             Age is required
           </span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6">
           <label class='control-label'>Gender: </label>
           <select #PersonGender="ngModel" [(ngModel)]="person.sex"
                   class='form-control' required #sex="ngModel" name="PersonGender">
@@ -24,7 +35,7 @@
             Gender is required
           </span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6">
           <label class='control-label'>BMI: </label>
           <input #PersonBMI="ngModel" [(ngModel)]="person.bmi" class='form-control'
                  autocomplete='off' size='20' name="bmi" type='number'
@@ -35,7 +46,7 @@
             BMI is required
           </span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6">
           <label class='control-label'>No of children: </label>
           <input #PersonChildren="ngModel" [(ngModel)]="person.children" autocomplete='off'
                  class='form-control' size='20' name="children" type='number' required #children="ngModel">
@@ -44,8 +55,8 @@
             Children is required
           </span>
         </div>
-        <div class="form-group">
-          <label class='control-label'>Are you smoker?: </label>
+        <div class="form-group col-md-6" >
+          <label class='control-label'>Are you smoker ?</label>
           <select #PersonSmoker="ngModel" [(ngModel)]="person.smoker" #smoker="ngModel"
                   class='form-control' required name="PersonSmoker">
 
@@ -57,7 +68,7 @@
             Smoker is required
           </span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-6 ">
           <label class='control-label'>Region: </label>
           <input #PersonRegion="ngModel" [(ngModel)]="person.region" class='form-control' size='20' name="region" type='text' required #region="ngModel">
           <span class="alert-danger"
@@ -65,7 +76,7 @@
             Region is required
           </span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-8 ">
           <label class='control-label'>Premium Charges: </label>
           <input #PersonCharges="ngModel" [(ngModel)]="person.charges" class='form-control' size='20' type='number' #charges="ngModel"
                  name="charges" required placeholder="0.00" min="0"
@@ -75,25 +86,27 @@
             Charges is required
           </span>
         </div>
-        <div class="form-group">
+        <div class="form-group col-md-8">
           <button class='btn btn-sm btn-primary' [disabled]="!predictionForm.form.valid" type="button" (click)="getPremium();"> submit</button>
         </div>
       </div>
-      <div class="col-sm-6">
-        <div class="col-sm-12">
-          <label class='control-label'></label>
-          <div class="alert alert-info">Output</div>
-          <br>
-          <div class="btn-group-vertical btn-block">
-            &nbsp;
-          </div>
-          <div class="jumbotron jumbotron-flat">
-            <h4>Premium:</h4> <div class="paymentAmt">${{finalPremiumScoredLabels | number }}</div><br />
-            <br><br><br>
-          </div>
+      </div>
+    <div class="card  col-md-4">
+        <div class="row">
+        <img class="card-img-top" src="assets/images/probo.png" style="height: 100px;width: 100px;" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Here will be your Premium !</h5>
+          <p class="card-text">${{finalPremiumScoredLabels | number }}</p>
+          <p class="card-text"><small class="text-muted">*Amount is subject to current intrest rate.</small></p>
         </div>
       </div>
+      </div>
+
+
     </div>
 
   </form>
 </div>
+
+
+

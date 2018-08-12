@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Person } from '../models/person';
 import { PremiumService } from '../services/premium.service';
-import { debug } from 'util';
+//import { debug } from 'util';
 
 @Component({
   selector: 'app-prediction',
@@ -12,6 +12,7 @@ import { debug } from 'util';
 export class PredictionComponent {
 
   title = 'Welcome to Premium Calculator';
+  /*
   person: any;
   finalPremiumScoredLabels: any;
 
@@ -25,5 +26,5 @@ export class PredictionComponent {
       this.finalPremiumScoredLabels = myData.Results.output1[0]["Scored Labels"];
     });
   }
-
+*/
 }

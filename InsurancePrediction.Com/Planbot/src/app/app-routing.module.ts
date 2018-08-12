@@ -1,7 +1,6 @@
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ChatComponent } from './chat/chat.component';
 import { LoginComponent } from './login/login.component';
 import { PredictionComponent } from './prediction/prediction.component';
 import { UserResolver } from './user/user.resolver';
@@ -15,7 +14,6 @@ const routes: Routes = [
     component: HomeLayoutComponent,
     children: [
       { path: '', component: HomeComponent, pathMatch: 'full', resolve: { data: UserResolver } },
-      { path: 'chat', component: ChatComponent, pathMatch: 'full', resolve: { data: UserResolver } },
       { path: 'prediction', component: PredictionComponent, pathMatch: 'full', resolve: { data: UserResolver } },
     ]
   },
